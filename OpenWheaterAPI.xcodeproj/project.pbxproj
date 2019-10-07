@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2636243D07C3994FB3121F3A /* Pods_OpenWheaterAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5A795D455D5D986908A5EE /* Pods_OpenWheaterAPI.framework */; };
+		89E70E60234B714900FA2E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E5F234B714900FA2E32 /* AppDelegate.swift */; };
+		89E70E62234B714900FA2E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E61234B714900FA2E32 /* SceneDelegate.swift */; };
+		89E70E64234B714900FA2E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E63234B714900FA2E32 /* ViewController.swift */; };
+		89E70E6A234B714900FA2E32 /* OpenWheaterAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E68234B714900FA2E32 /* OpenWheaterAPI.xcdatamodeld */; };
+		89E70E6C234B714B00FA2E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E70E6B234B714B00FA2E32 /* Assets.xcassets */; };
+		89E70E6F234B714B00FA2E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E70E6D234B714B00FA2E32 /* LaunchScreen.storyboard */; };
+		89E70E7A234B714B00FA2E32 /* OpenWheaterAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E79234B714B00FA2E32 /* OpenWheaterAPITests.swift */; };
+		89E70E85234B714B00FA2E32 /* OpenWheaterAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E84234B714B00FA2E32 /* OpenWheaterAPIUITests.swift */; };
+		89E70E96234B792600FA2E32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E95234B792600FA2E32 /* Constants.swift */; };
+		89E70E99234B7BF900FA2E32 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E98234B7BF900FA2E32 /* APIConfiguration.swift */; };
+		89E70E9C234B7EAD00FA2E32 /* WheaterEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E9B234B7EAD00FA2E32 /* WheaterEndpoint.swift */; };
+		89E70E9E234B8E9C00FA2E32 /* WheaterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E9D234B8E9C00FA2E32 /* WheaterClient.swift */; };
+		89E70EA1234B902800FA2E32 /* CurrentWheater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70EA0234B902800FA2E32 /* CurrentWheater.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89E70E76234B714B00FA2E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89E70E54234B714900FA2E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E70E5B234B714900FA2E32;
+			remoteInfo = OpenWheaterAPI;
+		};
+		89E70E81234B714B00FA2E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89E70E54234B714900FA2E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E70E5B234B714900FA2E32;
+			remoteInfo = OpenWheaterAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14685671F3E123C9FCBBF869 /* Pods-OpenWheaterAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWheaterAPI.release.xcconfig"; path = "Target Support Files/Pods-OpenWheaterAPI/Pods-OpenWheaterAPI.release.xcconfig"; sourceTree = "<group>"; };
+		18538FEE547CC9355BC5E34D /* Pods-OpenWheaterAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWheaterAPI.debug.xcconfig"; path = "Target Support Files/Pods-OpenWheaterAPI/Pods-OpenWheaterAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		89E70E5C234B714900FA2E32 /* OpenWheaterAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWheaterAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E70E5F234B714900FA2E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89E70E61234B714900FA2E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		89E70E63234B714900FA2E32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89E70E69234B714900FA2E32 /* OpenWheaterAPI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenWheaterAPI.xcdatamodel; sourceTree = "<group>"; };
+		89E70E6B234B714B00FA2E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89E70E6E234B714B00FA2E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89E70E70234B714B00FA2E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E70E75234B714B00FA2E32 /* OpenWheaterAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenWheaterAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E70E79234B714B00FA2E32 /* OpenWheaterAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWheaterAPITests.swift; sourceTree = "<group>"; };
+		89E70E7B234B714B00FA2E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E70E80234B714B00FA2E32 /* OpenWheaterAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenWheaterAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E70E84234B714B00FA2E32 /* OpenWheaterAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWheaterAPIUITests.swift; sourceTree = "<group>"; };
+		89E70E86234B714B00FA2E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E70E95234B792600FA2E32 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		89E70E98234B7BF900FA2E32 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		89E70E9B234B7EAD00FA2E32 /* WheaterEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterEndpoint.swift; sourceTree = "<group>"; };
+		89E70E9D234B8E9C00FA2E32 /* WheaterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterClient.swift; sourceTree = "<group>"; };
+		89E70EA0234B902800FA2E32 /* CurrentWheater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWheater.swift; sourceTree = "<group>"; };
+		FF5A795D455D5D986908A5EE /* Pods_OpenWheaterAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenWheaterAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89E70E59234B714900FA2E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2636243D07C3994FB3121F3A /* Pods_OpenWheaterAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E70E72234B714B00FA2E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E70E7D234B714B00FA2E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C10452AAFE6D0CFAFA1BC6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A795D455D5D986908A5EE /* Pods_OpenWheaterAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68879C574E32FF0164ECB4F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18538FEE547CC9355BC5E34D /* Pods-OpenWheaterAPI.debug.xcconfig */,
+				14685671F3E123C9FCBBF869 /* Pods-OpenWheaterAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		89E70E53234B714900FA2E32 = {
+			isa = PBXGroup;
+			children = (
+				89E70E5E234B714900FA2E32 /* OpenWheaterAPI */,
+				89E70E78234B714B00FA2E32 /* OpenWheaterAPITests */,
+				89E70E83234B714B00FA2E32 /* OpenWheaterAPIUITests */,
+				89E70E5D234B714900FA2E32 /* Products */,
+				68879C574E32FF0164ECB4F8 /* Pods */,
+				4C10452AAFE6D0CFAFA1BC6B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		89E70E5D234B714900FA2E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89E70E5C234B714900FA2E32 /* OpenWheaterAPI.app */,
+				89E70E75234B714B00FA2E32 /* OpenWheaterAPITests.xctest */,
+				89E70E80234B714B00FA2E32 /* OpenWheaterAPIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89E70E5E234B714900FA2E32 /* OpenWheaterAPI */ = {
+			isa = PBXGroup;
+			children = (
+				89E70E97234B7ADF00FA2E32 /* Service */,
+				89E70E92234B720600FA2E32 /* Supporting-Files */,
+				89E70E63234B714900FA2E32 /* ViewController.swift */,
+				89E70E95234B792600FA2E32 /* Constants.swift */,
+			);
+			path = OpenWheaterAPI;
+			sourceTree = "<group>";
+		};
+		89E70E78234B714B00FA2E32 /* OpenWheaterAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				89E70E79234B714B00FA2E32 /* OpenWheaterAPITests.swift */,
+				89E70E7B234B714B00FA2E32 /* Info.plist */,
+			);
+			path = OpenWheaterAPITests;
+			sourceTree = "<group>";
+		};
+		89E70E83234B714B00FA2E32 /* OpenWheaterAPIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				89E70E84234B714B00FA2E32 /* OpenWheaterAPIUITests.swift */,
+				89E70E86234B714B00FA2E32 /* Info.plist */,
+			);
+			path = OpenWheaterAPIUITests;
+			sourceTree = "<group>";
+		};
+		89E70E92234B720600FA2E32 /* Supporting-Files */ = {
+			isa = PBXGroup;
+			children = (
+				89E70E5F234B714900FA2E32 /* AppDelegate.swift */,
+				89E70E61234B714900FA2E32 /* SceneDelegate.swift */,
+				89E70E6B234B714B00FA2E32 /* Assets.xcassets */,
+				89E70E6D234B714B00FA2E32 /* LaunchScreen.storyboard */,
+				89E70E70234B714B00FA2E32 /* Info.plist */,
+				89E70E68234B714900FA2E32 /* OpenWheaterAPI.xcdatamodeld */,
+			);
+			path = "Supporting-Files";
+			sourceTree = "<group>";
+		};
+		89E70E97234B7ADF00FA2E32 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				89E70E9F234B901800FA2E32 /* Model */,
+				89E70E9A234B7E8400FA2E32 /* WheatherEndpoint */,
+				89E70E98234B7BF900FA2E32 /* APIConfiguration.swift */,
+				89E70E9D234B8E9C00FA2E32 /* WheaterClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		89E70E9A234B7E8400FA2E32 /* WheatherEndpoint */ = {
+			isa = PBXGroup;
+			children = (
+				89E70E9B234B7EAD00FA2E32 /* WheaterEndpoint.swift */,
+			);
+			path = WheatherEndpoint;
+			sourceTree = "<group>";
+		};
+		89E70E9F234B901800FA2E32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89E70EA0234B902800FA2E32 /* CurrentWheater.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89E70E5B234B714900FA2E32 /* OpenWheaterAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E70E89234B714B00FA2E32 /* Build configuration list for PBXNativeTarget "OpenWheaterAPI" */;
+			buildPhases = (
+				46E757097E24E5D00A2D068D /* [CP] Check Pods Manifest.lock */,
+				89E70E58234B714900FA2E32 /* Sources */,
+				89E70E59234B714900FA2E32 /* Frameworks */,
+				89E70E5A234B714900FA2E32 /* Resources */,
+				4EB3656C7210B7B4C190B0D8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenWheaterAPI;
+			productName = OpenWheaterAPI;
+			productReference = 89E70E5C234B714900FA2E32 /* OpenWheaterAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89E70E74234B714B00FA2E32 /* OpenWheaterAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E70E8C234B714B00FA2E32 /* Build configuration list for PBXNativeTarget "OpenWheaterAPITests" */;
+			buildPhases = (
+				89E70E71234B714B00FA2E32 /* Sources */,
+				89E70E72234B714B00FA2E32 /* Frameworks */,
+				89E70E73234B714B00FA2E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89E70E77234B714B00FA2E32 /* PBXTargetDependency */,
+			);
+			name = OpenWheaterAPITests;
+			productName = OpenWheaterAPITests;
+			productReference = 89E70E75234B714B00FA2E32 /* OpenWheaterAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89E70E7F234B714B00FA2E32 /* OpenWheaterAPIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E70E8F234B714B00FA2E32 /* Build configuration list for PBXNativeTarget "OpenWheaterAPIUITests" */;
+			buildPhases = (
+				89E70E7C234B714B00FA2E32 /* Sources */,
+				89E70E7D234B714B00FA2E32 /* Frameworks */,
+				89E70E7E234B714B00FA2E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89E70E82234B714B00FA2E32 /* PBXTargetDependency */,
+			);
+			name = OpenWheaterAPIUITests;
+			productName = OpenWheaterAPIUITests;
+			productReference = 89E70E80234B714B00FA2E32 /* OpenWheaterAPIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89E70E54234B714900FA2E32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = rafaeldelegate;
+				TargetAttributes = {
+					89E70E5B234B714900FA2E32 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					89E70E74234B714B00FA2E32 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 89E70E5B234B714900FA2E32;
+					};
+					89E70E7F234B714B00FA2E32 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 89E70E5B234B714900FA2E32;
+					};
+				};
+			};
+			buildConfigurationList = 89E70E57234B714900FA2E32 /* Build configuration list for PBXProject "OpenWheaterAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89E70E53234B714900FA2E32;
+			productRefGroup = 89E70E5D234B714900FA2E32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89E70E5B234B714900FA2E32 /* OpenWheaterAPI */,
+				89E70E74234B714B00FA2E32 /* OpenWheaterAPITests */,
+				89E70E7F234B714B00FA2E32 /* OpenWheaterAPIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89E70E5A234B714900FA2E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E70E6F234B714B00FA2E32 /* LaunchScreen.storyboard in Resources */,
+				89E70E6C234B714B00FA2E32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E70E73234B714B00FA2E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E70E7E234B714B00FA2E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46E757097E24E5D00A2D068D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenWheaterAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EB3656C7210B7B4C190B0D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenWheaterAPI/Pods-OpenWheaterAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenWheaterAPI/Pods-OpenWheaterAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenWheaterAPI/Pods-OpenWheaterAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89E70E58234B714900FA2E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E70E96234B792600FA2E32 /* Constants.swift in Sources */,
+				89E70E99234B7BF900FA2E32 /* APIConfiguration.swift in Sources */,
+				89E70E64234B714900FA2E32 /* ViewController.swift in Sources */,
+				89E70E60234B714900FA2E32 /* AppDelegate.swift in Sources */,
+				89E70E62234B714900FA2E32 /* SceneDelegate.swift in Sources */,
+				89E70E9E234B8E9C00FA2E32 /* WheaterClient.swift in Sources */,
+				89E70E6A234B714900FA2E32 /* OpenWheaterAPI.xcdatamodeld in Sources */,
+				89E70E9C234B7EAD00FA2E32 /* WheaterEndpoint.swift in Sources */,
+				89E70EA1234B902800FA2E32 /* CurrentWheater.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E70E71234B714B00FA2E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E70E7A234B714B00FA2E32 /* OpenWheaterAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E70E7C234B714B00FA2E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E70E85234B714B00FA2E32 /* OpenWheaterAPIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89E70E77234B714B00FA2E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89E70E5B234B714900FA2E32 /* OpenWheaterAPI */;
+			targetProxy = 89E70E76234B714B00FA2E32 /* PBXContainerItemProxy */;
+		};
+		89E70E82234B714B00FA2E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89E70E5B234B714900FA2E32 /* OpenWheaterAPI */;
+			targetProxy = 89E70E81234B714B00FA2E32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89E70E6D234B714B00FA2E32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89E70E6E234B714B00FA2E32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89E70E87234B714B00FA2E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89E70E88234B714B00FA2E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89E70E8A234B714B00FA2E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18538FEE547CC9355BC5E34D /* Pods-OpenWheaterAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OpenWheaterAPI/Supporting-Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guithub.com-rafascalzo.OpenWheaterAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89E70E8B234B714B00FA2E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14685671F3E123C9FCBBF869 /* Pods-OpenWheaterAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OpenWheaterAPI/Supporting-Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guithub.com-rafascalzo.OpenWheaterAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89E70E8D234B714B00FA2E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenWheaterAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guithub.com-rafascalzo.OpenWheaterAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenWheaterAPI.app/OpenWheaterAPI";
+			};
+			name = Debug;
+		};
+		89E70E8E234B714B00FA2E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenWheaterAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guithub.com-rafascalzo.OpenWheaterAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenWheaterAPI.app/OpenWheaterAPI";
+			};
+			name = Release;
+		};
+		89E70E90234B714B00FA2E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenWheaterAPIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guithub.com-rafascalzo.OpenWheaterAPIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenWheaterAPI;
+			};
+			name = Debug;
+		};
+		89E70E91234B714B00FA2E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenWheaterAPIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guithub.com-rafascalzo.OpenWheaterAPIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenWheaterAPI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89E70E57234B714900FA2E32 /* Build configuration list for PBXProject "OpenWheaterAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E70E87234B714B00FA2E32 /* Debug */,
+				89E70E88234B714B00FA2E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89E70E89234B714B00FA2E32 /* Build configuration list for PBXNativeTarget "OpenWheaterAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E70E8A234B714B00FA2E32 /* Debug */,
+				89E70E8B234B714B00FA2E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89E70E8C234B714B00FA2E32 /* Build configuration list for PBXNativeTarget "OpenWheaterAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E70E8D234B714B00FA2E32 /* Debug */,
+				89E70E8E234B714B00FA2E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89E70E8F234B714B00FA2E32 /* Build configuration list for PBXNativeTarget "OpenWheaterAPIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E70E90234B714B00FA2E32 /* Debug */,
+				89E70E91234B714B00FA2E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89E70E68234B714900FA2E32 /* OpenWheaterAPI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89E70E69234B714900FA2E32 /* OpenWheaterAPI.xcdatamodel */,
+			);
+			currentVersion = 89E70E69234B714900FA2E32 /* OpenWheaterAPI.xcdatamodel */;
+			path = OpenWheaterAPI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 89E70E54234B714900FA2E32 /* Project object */;
+}
