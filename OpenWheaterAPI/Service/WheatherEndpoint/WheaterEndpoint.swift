@@ -8,7 +8,7 @@
 
 import Alamofire
 
-enum WheaterEndpoint: APIConfiguration {
+enum WeatherEndpoint: APIConfiguration {
     
     /*Get the current wheater for a city
      
@@ -37,7 +37,7 @@ enum WheaterEndpoint: APIConfiguration {
     var path: String {
         switch self {
         case .current(let cityId, let unit):
-            return "/wheater?id=\(cityId)&units=\(unit)&APPID\(Constants.APIParameterKey.apiKey)"
+            return "/weather?id=\(cityId)&units=\(unit)&APPID=\(Constants.APIParameterKey.apiKey)"
         case .forecast(let cityId,let unit):
             return "/forecast?id=\(cityId)&units=\(unit)&APPID=\(Constants.APIParameterKey.apiKey)"
         }
@@ -55,9 +55,9 @@ enum WheaterEndpoint: APIConfiguration {
     // MARK: - URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
         
-        let url = try Constants.ProductionServer.baseURL.asURL()
+        let url =  Constants.ProductionServer.baseURL + path
         
-        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
+        var urlRequest = URLRequest(url: URL(string: url)!)
         
         //HTTP Method
         urlRequest.httpMethod = method.rawValue
@@ -76,6 +76,7 @@ enum WheaterEndpoint: APIConfiguration {
                     AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
             }
         }
+        debugPrint(urlRequest)
         return urlRequest
     }
 }

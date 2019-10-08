@@ -8,23 +8,22 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .red
-        print("vish")
-        WeatherClient.getCurrentWeather(cityId: 3451190, unit: "metric") { (result, error) in
+        
+        WeatherClient.getCurrentWeather(cityId: 3462580, unit: "metric") { (result, error) in
             if error != nil {
                 print("error while processing data")
                 return
             } else {
-                print(result?.name)
-                print(result?.main.temp)
+                print(result!.name)
+                print(result!.main.temp)
             }
-            
-            
         }
     }
 }

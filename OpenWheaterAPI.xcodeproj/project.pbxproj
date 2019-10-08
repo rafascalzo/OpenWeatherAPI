@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2636243D07C3994FB3121F3A /* Pods_OpenWheaterAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5A795D455D5D986908A5EE /* Pods_OpenWheaterAPI.framework */; };
+		89B2B331234CB234001A936B /* city.list.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B2B330234CB234001A936B /* city.list.json */; };
 		89E70E60234B714900FA2E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E5F234B714900FA2E32 /* AppDelegate.swift */; };
 		89E70E62234B714900FA2E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E61234B714900FA2E32 /* SceneDelegate.swift */; };
 		89E70E64234B714900FA2E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E70E63234B714900FA2E32 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		14685671F3E123C9FCBBF869 /* Pods-OpenWheaterAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWheaterAPI.release.xcconfig"; path = "Target Support Files/Pods-OpenWheaterAPI/Pods-OpenWheaterAPI.release.xcconfig"; sourceTree = "<group>"; };
 		18538FEE547CC9355BC5E34D /* Pods-OpenWheaterAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWheaterAPI.debug.xcconfig"; path = "Target Support Files/Pods-OpenWheaterAPI/Pods-OpenWheaterAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		89B2B330234CB234001A936B /* city.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.list.json; sourceTree = "<group>"; };
 		89E70E5C234B714900FA2E32 /* OpenWheaterAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWheaterAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E70E5F234B714900FA2E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E70E61234B714900FA2E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		89E70E92234B720600FA2E32 /* Supporting-Files */ = {
 			isa = PBXGroup;
 			children = (
+				89B2B330234CB234001A936B /* city.list.json */,
 				89E70E5F234B714900FA2E32 /* AppDelegate.swift */,
 				89E70E61234B714900FA2E32 /* SceneDelegate.swift */,
 				89E70E6B234B714B00FA2E32 /* Assets.xcassets */,
@@ -307,6 +310,7 @@
 			files = (
 				89E70E6F234B714B00FA2E32 /* LaunchScreen.storyboard in Resources */,
 				89E70E6C234B714B00FA2E32 /* Assets.xcassets in Resources */,
+				89B2B331234CB234001A936B /* city.list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

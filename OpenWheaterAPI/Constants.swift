@@ -9,10 +9,10 @@
 import Foundation
 
 struct Constants {
-    
     struct ProductionServer {
-        static let baseURL = "http://api.openweathermap.org/data/2.5"
+        static let baseURL = "https://api.openweathermap.org/data/2.5"
     }
+    
     struct APIParameterKey {
         static let apiKey = "e3210de01d0fa7e1c2ea51685f120d9f"
     }
